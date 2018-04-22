@@ -34,3 +34,11 @@ https://confluence.atlassian.com/bitbucket/using-docker-images-as-build-environm
 # Versioning
 The latest tag matches the most recent release, so jackton1/bitbucket-ecr:latest
  will use the newest stable version available.
+
+
+# Usage
+Use like you would any other base image:
+```
+FROM jackton1/bitbucket-ecr:latest
+RUN python3.6 -m pip install -U Django
+```
