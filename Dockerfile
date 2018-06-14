@@ -3,7 +3,6 @@ FROM atlassian/default-image:2
 MAINTAINER Tonye Jack <jtonye@ymail.com>
 
 ADD package.json /opt/atlassian/bitbucketci/agent/build/package.json
-ADD package-lock.json /opt/atlassian/bitbucketci/agent/build/package-lock.json
 
 RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN add-apt-repository ppa:git-core/ppa
