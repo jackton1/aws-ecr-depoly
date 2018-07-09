@@ -4,9 +4,11 @@ MAINTAINER Tonye Jack <jtonye@ymail.com>
 
 RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN add-apt-repository ppa:git-core/ppa
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update && apt-get -y upgrade && apt-get install -y --no-install-recommends \
     git \
     jq \
+    nodejs \
     software-properties-common \
     python-software-properties \
     python3.6-dev \
