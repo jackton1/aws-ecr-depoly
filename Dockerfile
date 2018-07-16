@@ -1,6 +1,6 @@
 FROM atlassian/default-image:2
 
-MAINTAINER Tonye Jack <jtonye@ymail.com>
+LABEL maintainer="Tonye Jack <jtonye@ymail.com>"
 
 RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN add-apt-repository ppa:git-core/ppa
